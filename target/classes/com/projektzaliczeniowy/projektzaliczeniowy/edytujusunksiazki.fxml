@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="edytujusunksi" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="259.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.projektzaliczeniowy.projektzaliczeniowy.SceneController">
+    <children>
+        <Button fx:id="wstecz_ksi" layoutX="14.0" layoutY="219.0" mnemonicParsing="false" text="Wstecz"/>
+        <Button fx:id="zmien_ksi" layoutX="116.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="54.0" text="Zmień"/>
+        <TextField fx:id="tytul_textfield" layoutX="95.0" layoutY="23.0" onKeyPressed="#validate"/>
+        <TextField fx:id="autor_textfield" layoutX="95.0" layoutY="63.0" onKeyPressed="#validate"/>
+        <TextField fx:id="wydawca_textfield" layoutX="95.0" layoutY="105.0" onKeyPressed="#validate"/>
+        <TextField fx:id="rokWydania_textfield" layoutX="95.0" layoutY="146.0" onKeyPressed="#validateTel"
+                   onKeyTyped="#dlugoscRok"/>
+        <CheckBox fx:id="select" layoutX="149.0" layoutY="183.0" mnemonicParsing="false" text="Wypożyczona"/>
+        <Text fx:id="autor_text" layoutX="52.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autor:"/>
+        <Text fx:id="tytul_text" layoutX="57.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tytuł:"/>
+        <Text fx:id="wydawca_text" layoutX="30.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Wydawca:"/>
+        <Text fx:id="rokWydania_text" layoutX="17.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Rok wydania:"/>
+        <Button fx:id="usun_ksi" layoutX="217.0" layoutY="219.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="54.0" text="Usuń"/>
+        <Text fx:id="ksiazkiPopup" layoutX="19.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+    </children>
+</AnchorPane>
